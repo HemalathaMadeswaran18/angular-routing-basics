@@ -15,4 +15,20 @@ export class UserService {
     }
    } );
   }
+
+  getUser(id:string){
+    return this.http.get(`https://dummyapi.io/data/v1/user/${id}`,{
+    headers:{
+      'app-id':'64ed7aba9d50b3128c670615'
+    }
+   } );
+  }
+  
+
+
+
+
+
+
+
 }
