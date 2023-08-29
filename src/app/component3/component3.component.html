@@ -1,1 +1,17 @@
-<p style="height: 100vh;">component3 works!</p>
+<p >component3 sssworks!</p>
+
+<div class="card-list">
+    <div class="card" *ngFor="let post of posts">
+    
+      <div class="card-body">
+        <img width="230px" height="280px" src = {{post.image}} class="card-img-top" >
+        <p>firstName: {{ post.id }}</p>
+        <p>lastName: {{ post.text }}</p>
+        <p>id: {{ post.id }}</p>
+   
+       
+     
+      </div>
+    </div>
+  </div>
+

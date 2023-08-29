@@ -11,7 +11,7 @@ export class ProfileComponent {
 
 public userid:any;
 public userdata:any;
-
+//if u want to create just the post without profile then create just a plain post route and then use it 
 
 //gives snapshot of current url
   constructor (private route: ActivatedRoute, private service: UserService){}

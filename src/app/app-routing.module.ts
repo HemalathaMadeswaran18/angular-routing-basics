@@ -5,13 +5,19 @@ import { Component2Component } from './component2/component2.component';
 import { Component3Component } from './component3/component3.component';
 import { UserComponent } from './user/user.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PostComponent } from './post/post.component';
 
 const routes: Routes = [
   {path:'c1',component:Component1Component},
   {path:'c2',component:Component2Component},
   {path:'c3',component:Component3Component},
   {path:'user',component:UserComponent},
-  {path:'profile/:userid',component:ProfileComponent}
+  {path:'profile/:userid',component:ProfileComponent,
+  children:[
+    {path:'posts',component:PostComponent}
+  ]
+}
+ 
 ];
 //this is referenced in the navbar html, these path names are called directly 
 

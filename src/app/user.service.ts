@@ -23,7 +23,25 @@ export class UserService {
     }
    } );
   }
+
+
+
+  getPosts(){
+    return this.http.get('https://dummyapi.io/data/v1/post?limit=10',{
+    headers:{
+      'app-id':'64ed7aba9d50b3128c670615'
+    }
+   } );
+  }
   
+
+  getUserPosts(id:string){
+    return this.http.get(`https://dummyapi.io/data/v1/user/${id}/post?limit=10`,{
+    headers:{
+      'app-id':'64ed7aba9d50b3128c670615'
+    }
+   } );
+  }
 
 
 
