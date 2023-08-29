@@ -1,0 +1,15 @@
+<p>user works!</p>
+<div class="card-list">
+    <div class="card" *ngFor="let user of users">
+    
+      <div class="card-body">
+        <img width="230px" height="280px" src = {{user.picture}} class="card-img-top" >
+        <p>firstName: {{ user.firstName }}</p>
+        <p>lastName: {{ user.lastName }}</p>
+        <p>id: {{ user.id }}</p>
+        <!-- Other contact details as needed -->
+     
+      </div>
+    </div>
+  </div>
+  
